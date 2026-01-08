@@ -70,4 +70,14 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "Backend API is running 🚀",
+    status: "OK"
+  });
+});
+
+app.get("/favicon.ico", (req, res) => res.status(204));
+
+
 export default app;
