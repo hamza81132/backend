@@ -79,5 +79,15 @@ app.get("/", (req, res) => {
 
 app.get("/favicon.ico", (req, res) => res.status(204));
 
+import cors from "cors";
+
+app.use(
+  cors({
+    origin: [
+      "https://frontend-xxxx.vercel.app",
+    ],
+    credentials: true,
+  })
+);
 
 export default app;
