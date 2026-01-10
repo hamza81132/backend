@@ -9,7 +9,7 @@
     "backend": "nodemon backend/index.js",
     "frontend": "cd frontend && npm run dev",
     "start": "node server",
-    "vercel-start":"node server.js"
+    "vercel-start":"node index.js"
   },
   "keywords": [],
   "author": "",
